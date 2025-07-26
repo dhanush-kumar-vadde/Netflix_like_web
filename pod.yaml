@@ -1,0 +1,14 @@
+# pod.yaml
+apiVersion: v1
+kind: Pod
+metadata:
+  name: frontend-pod
+  namespace: frontend-app
+  labels:
+    app: cineverse
+spec:
+  containers:
+  - name: frontend-container
+    image: saakshidhage/frontend-project:latest
+    ports:
+    - containerPort: 8888
